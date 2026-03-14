@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact La Belle Cuisine for reservations, private events, or inquiries. Visit us at our downtown location or reach out online.">
+    <title>Contact Us | La Belle Cuisine</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar scrolled">
+        <div class="container">
+            <a href="index.html" class="nav-logo">
+                <i class="fas fa-utensils" style="font-size: 2rem; color: var(--primary-color);"></i>
+                <span>La Belle Cuisine</span>
+            </a>
+            <div class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="about.html">About</a>
+                <a href="contact.html" class="active">Contact</a>
+                <a href="#reservations" class="btn btn-primary">Reserve Table</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header" style="background: linear-gradient(rgba(15, 15, 26, 0.85), rgba(15, 15, 26, 0.85)), url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat; min-height: 50vh; display: flex; align-items: center; justify-content: center; text-align: center; padding-top: 80px;">
+        <div class="container">
+            <h1 style="color: var(--white); font-size: 3.5rem; margin-bottom: 20px;">Contact Us</h1>
+            <p style="color: var(--text-light); font-size: 1.2rem; max-width: 600px; margin: 0 auto; opacity: 0.9;">We'd love to hear from you. Reach out for reservations, inquiries, or just to say hello</p>
+        </div>
+    </header>
+
+    <!-- Contact Information Section -->
+    <section class="contact-info section-padding" style="background: var(--white);">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px;">
+                <!-- Address Card -->
+                <div style="text-align: center; padding: 40px 25px; background: var(--bg-light); border-radius: var(--border-radius); transition: var(--transition);" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='var(--shadow-lg)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+                    <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--primary-color), var(--accent-color)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 25px;">
+                        <i class="fas fa-map-marker-alt" style="font-size: 2rem; color: var(--white);"></i>
+                    </div>
+                    <h4 style="margin-bottom: 15px; color: var(--secondary-color);">Our Location</h4>
+                    <p style="color: var(--text-muted); line-height: 1.8;">
+                        742 Evergreen Terrace<br>
+                        Downtown District<br>
+                        New York, NY 10001
+                    </p>
+                </div>
+
+                <!-- Phone Card -->
+                <div style="text-align: center; padding: 40px 25px; background: var(--bg-light); border-radius: var(--border-radius); transition: var(--transition);" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='var(--shadow-lg)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+                    <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--primary-color), var(--accent-color)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 25px;">
+                        <i class="fas fa-phone-alt" style="font-size: 2rem; color: var(--white);"></i>
+                    </div>
+                    <h4 style="margin-bottom: 15px; color: var(--secondary-color);">Phone</h4>
+                    <p style="color: var(--text-muted); line-height: 1.8;">
+                        Reservations:<br>
+                        <a href="tel:+12125551234" style="color: var(--primary-color); font-weight: 500;">(212) 555-1234</a><br>
+                        <a href="tel:+12125555678" style="color: var(--primary-color); font-weight: 500;">(212) 555-5678</a>
+                    </p>
+                </div>
+
+                <!-- Email Card -->
+                <div style="text-align: center; padding: 40px 25px; background: var(--bg-light); border-radius: var(--border-radius); transition: var(--transition);" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='var(--shadow-lg)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+                    <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--primary-color), var(--accent-color)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 25px;">
+                        <i class="fas fa-envelope" style="font-size: 2rem; color: var(--white);"></i>
+                    </div>
+                    <h4 style="margin-bottom: 15px; color: var(--secondary-color);">Email</h4>
+                    <p style="color: var(--text-muted); line-height: 1.8;">
+                        General Inquiries:<br>
+                        <a href="mailto:info@labellecuisine.com" style="color: var(--primary-color); font-weight: 500;">info@labellecuisine.com</a><br>
+                        <a href="mailto:events@labellecuisine.com" style="color: var(--primary-color); font-weight: 500;">events@labellecuisine.com</a>
+                    </p>
+                </div>
+
+                <!-- Hours Card -->
+                <div style="text-align: center; padding: 40px 25px; background: var(--bg-light); border-radius: var(--border-radius); transition: var(--transition);" onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='var(--shadow-lg)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
+                    <div style="width: 80px; height: 80px; background: linear-gradient(135deg, var(--primary-color), var(--accent-color)); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 25px;">
+                        <i class="fas fa-clock" style="font-size: 2rem; color: var(--white);"></i>
+                    </div>
+                    <h4 style="margin-bottom: 15px; color: var(--secondary-color);">Hours</h4>
+                    <p style="color: var(--text-muted); line-height: 1.8;">
+                        Mon - Thu: 5pm - 10pm<br>
+                        Fri - Sat: 5pm - 11pm<br>
+                        Sunday: 4pm - 9pm
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Form Section -->
+    <section id="reservations" class="reservations-section section-padding" style="background: var(--bg-light);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Make a Reservation</h2>
+                <p>Reserve your table online and join us for an unforgettable dining experience</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start;">
+                <!-- Reservation Form -->
+                <div style="background: var(--white); padding: 50px; border-radius: var(--border-radius); box-shadow: var(--shadow);">
+                    <form id="reservationForm">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                            <div style="margin-bottom: 25px;">
+                                <label for="firstName" style="display: block; margin-bottom: 8px; font-weight: 500; color: var(--secondary-color);">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required style="width: 100%; padding: 15px; border: 2px solid #e0e0e0; border-radius: var(--border-radius); font-family: 'Poppins', sans-serif; font-size: 1rem; transition: var(--transition);" onfocus="this.style.borderColor='var(--primary-color)'" onblur="this.style.borderColor='#e0e0e0'">
+                            </div>
+                            <div style="margin-bottom: 25px;">
+                                <label for="lastName" style="display: block; margin-bottom: 8px; font-weight: 500; color: var(--secondary-color);">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required style="width: 100%; padding: 15px; border: 2px solid #e0e0e0; border-radius: var(--border-radius); font-family: 'Poppins', sans-serif; font-size: 1rem; transition: var(--transition);" onfocus="this.style.borderColor='var(--primary-color)'" onblur="this.style.borderColor='#e0e0e0'">
+                            </div>
+                        </div>
+
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                            <div style="margin-bottom: 25px;">
+                                <label for="email" style="display: block; margin-bottom: 8px; font-weight: 500; color: var(--secondary-color);">Email Address *</label>
+                                <input type="email" id="email" name="email" required style="width: 100%; padding: 15px; border: 2px solid #e0e0e0; border-radius: var(--border-radius); font-family: 'Poppins', sans-serif; font-size: 1rem; transition: var(--transition);" onfocus="this.style.borderColor='var(--primary-color)'" onblur="this.style.borderColor='#e0e0e0'">
+                            </div>
+                            <div style="margin-bottom: 25px;">
+                                <label for="phone" style="display: block; margin-bottom: 8px; font-weight: 500; color: var(--secondary-color);">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required style="width: 100%; padding: 15px; border: 2px solid #e0e0e0; border-radius: var(--border-radius); font-family: 'Poppins', sans-serif; font-size: 1rem; transition: var(--transition);" onfocus="this.style.borderColor='var(--primary-color)'" onblur="this.style.borderColor='#e0e0e0'">
+                            </div>
+                        </div>
+
+                        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px;">
+                            <div style="margin-bottom: 25px;">
+                                <label for="date" style="display: block; margin-bottom: 8px; font-weight: 500; color: var(--secondary-color);">Date *</label>
+                                <input type="date" id="date" name="date" required style="width: 100%; padding: 15px; border: 2px solid #e0e0e0; border-radius: var(--border-radius); font-family: 'Poppins', sans-serif; font-size: 1rem; transition: var(--transition);" onfocus="this.style.borderColor='var(--primary-color)'" onblur="this.style.borderColor='#e0e0e0'">
+                            </div>
+                            <div style="margin-bottom: 25px;">
+                                <label for="time" style="display: block; margin-bottom: 8px; font-weight: 500; color: var(--secondary-color);">Time *</label>
+                                <select id="time" name="time" required style="width: 100%; padding: 15px; border: 2px solid #e0e0e0; border-radius: var(--border-radius); font-family: 'Poppins', sans-serif; font-size: 1rem; transition: var(--transition); background: var(--white);" onfocus="this.style.borderColor='var(--primary-color)'" onblur="this.style.borderColor='#e0e0e0'">
+                                    <option value="">Select Time</option>
+                                    <option value="17:00">5:00 PM</option>
+                                    <option value="17:30">5:30 PM</option>
+                                    <option value="18:00">6:00 PM</option>
+                                    <option value="18:30">6:30 PM</option>
+                                    <option value="19:00">7:00 PM</option>
+                                    <option value="19:30">7:30 PM</option>
+                                    <option value="20:00">8:00 PM</option>
+                                    <option value="20:30">8:30 PM</option>
+                                    <option value="21:00">9:00 PM</option>
+                                    <option value="21:30">9:30 PM</option>
+                                </select>
+                            </div>
+                            <div style="margin-bottom: 25px;">
+                                <label for="guests" style="display: block; margin-bottom: 8px; font-weight: 500; color: var(--secondary-color);">Guests *</label>
+                                <select id="guests" name="guests" required style="width: 100%; padding: 15px; border: 2px solid #e0e0e0; border-radius: var(--border-radius); font-family: 'Poppins', sans-serif; font-size: 1rem; transition: var(--transition); background: var(--white);" onfocus="this.style.borderColor='var(--primary-color)'" onblur="this.style.borderColor='#e0e0e0'">
+                                    <option value="">Select</option>
+                                    <option value="1">1 Guest</option>
+                                    <option value="2">2 Guests</option>
+                                    <option value="3">3 Guests</option>
+                                    <option value="4">4 Guests</option>
+                                    <option value="5">5 Guests</option>
+                                    <option value="6">6 Guests</option>
+                                    <option value="7">7 Guests</option>
+                                    <option value="8">8+ Guests</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div style="margin-bottom: 25px;">
+                            <label for="occasion" style="display: block; margin-bottom: 8px; font-weight: 500; color: var(--secondary-color);">Special Occasion</label>
+                            <select id="occasion" name="occasion" style="width: 100%; padding: 15px; border: 2px solid #e0e0e0; border-radius: var(--border-radius); font-family: 'Poppins', sans-serif; font-size: 1rem; transition: var(--transition); background: var(--white);" onfocus="this.style.borderColor='var(--primary-color)'" onblur="this.style.borderColor='#e0e0e0'">
+                                <option value="">None</option>
+                                <option value="birthday">Birthday</option>
+                                <option value="anniversary">Anniversary</option>
+                                <option value="date">Date Night</option>
+                                <option value="business">Business Dinner</option>
+                                <option value="celebration">Celebration</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div style="margin-bottom: 30px;">
+                            <label for="requests" style="display: block; margin-bottom: 8px; font-weight: 500; color: var(--secondary-color);">Special Requests</label>
+                            <textarea id="requests" name="requests" rows="4" placeholder="Dietary restrictions, seating preferences, allergies, or any other requests..." style="width: 100%; padding: 15px; border: 2px solid #e0e0e0; border-radius: var(--border-radius); font-family: 'Poppins', sans-serif; font-size: 1rem; transition: var(--transition); resize: vertical;" onfocus="this.style.borderColor='var(--primary-color)'" onblur="this.style.borderColor='#e0e0e0'"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 18px; font-size: 1.1rem;">
+                            <i class="fas fa-calendar-check" style="margin-right: 10px;"></i>Confirm Reservation
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Reservation Info -->
+                <div>
+                    <div style="background: var(--secondary-color); color: var(--white); padding: 40px; border-radius: var(--border-radius); margin-bottom: 30px;">
+                        <h3 style="color: var(--primary-color); margin-bottom: 25px;">Reservation Policy</h3>
+                        <ul style="space-y: 15px;">
+                            <li style="display: flex; align-items: flex-start; margin-bottom: 15px;">
+                                <i class="fas fa-check-circle" style="color: var(--primary-color); margin-right: 15px; margin-top: 5px;"></i>
+                                <span>Reservations are held for 15 minutes past the booking time</span>
+                            </li>
+                            <li style="display: flex; align-items: flex-start; margin-bottom: 15px;">
+                                <i class="fas fa-check-circle" style="color: var(--primary-color); margin-right: 15px; margin-top: 5px;"></i>
+                                <span>For parties of 8 or more, please call us directly</span>
+                            </li>
+                            <li style="display: flex; align-items: flex-start; margin-bottom: 15px;">
+                                <i class="fas fa-check-circle" style="color: var(--primary-color); margin-right: 15px; margin-top: 5px;"></i>
+                                <span>Cancellations must be made 24 hours in advance</span>
+                            </li>
+                            <li style="display: flex; align-items: flex-start; margin-bottom: 15px;">
+                                <i class="fas fa-check-circle" style="color: var(--primary-color); margin-right: 15px; margin-top: 5px;"></i>
+                                <span>Smart casual dress code is appreciated</span>
+                            </li>
+                            <li style="display: flex; align-items: flex-start;">
+                                <i class="fas fa-check-circle" style="color: var(--primary-color); margin-right: 15px; margin-top: 5px;"></i>
+                                <span>Children are welcome with supervision</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, var(--primary-color), var(--accent-color)); padding: 40px; border-radius: var(--border-radius); text-align: center; color: var(--white);">
+                        <i class="fas fa-phone-volume" style="font-size: 3rem; margin-bottom: 20px;"></i>
+                        <h3 style="color: var(--white); margin-bottom: 15px;">Prefer to Call?</h3>
+                        <p style="margin-bottom: 20px; opacity: 0.9;">Our reservations team is available daily from 10am to 10pm</p>
+                        <a href="tel:+12125551234" style="display: inline-block; background: var(--white); color: var(--primary-color); padding: 15px 35px; border-radius: 30px; font-weight: 600; font-size: 1.2rem;">
+                            <i class="fas fa-phone" style="margin-right: 10px;"></i>(212) 555-1234
+                        </a>
+                    </div>
+
+                    <div style="margin-top: 30px; padding: 30px; background: var(--white); border-radius: var(--border-radius); box-shadow: var(--shadow);">
+                        <h4 style="margin-bottom: 20px; display: flex; align-items: center;">
+                            <i class="fas fa-gift" style="color: var(--primary-color); margin-right: 15px;"></i>
+                            Private Events & Catering
+                        </h4>
+                        <p style="color: var(--text-muted); margin-bottom: 20px;">Planning a special event? Our private dining room accommodates up to 40 guests. We also offer full-service catering for off-site events.</p>
+                        <a href="mailto:events@labellecuisine.com" class="btn btn-outline" style="border: 2px solid var(--primary-color); color: var(--primary-color); padding: 12px 25px;">
+                            Inquire About Events
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section section-padding" style="background: var(--white);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Send Us a Message</h2>
+                <p>Have a question or feedback? We're here to help and would love to hear from you</p>
+            </div>
+
+            <div style="max-width: 800px; margin: 0 auto;">
+                <form id="contactForm" style="background: var(--bg-light); padding: 50px; border-radius: var(--border-radius);">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <div style="margin-bottom: 25px;">
+                            <label for="contactName" style="display: block; margin-bottom: 8px; font-weight: 500; color: var(--secondary-color);">Your Name *</label>
+                            <input type="text" id="contactName" name="contactName" required style="width: 100%; padding: 15px; border: 2px solid #e0e0e0; border-radius: var(--border-radius); font-family: 'Poppins', sans-serif; font-size: 1rem; transition: var(--transition); background: var(--white);" onfocus="this.style.borderColor='var(--primary-color)'" onblur="this.style.borderColor='#e0e0e0'">
+                        </div>
+                        <div style="margin-bottom: 25px;">
+                            <label for="contactEmail" style="display: block; margin-bottom: 8px; font-weight: 500; color: var(--secondary-color);">Email Address *</label>
+                            <input type="email" id="contactEmail" name="contactEmail" required style="width: 100%; padding: 15px; border: 2px solid #e0e0e0; border-radius: var(--border-radius); font-family: 'Poppins', sans-serif; font-size: 1rem; transition: var(--transition); background: var(--white);" onfocus="this.style.borderColor='var(--primary-color)'" onblur="this.style.borderColor='#e0e0e0'">
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 25px;">
+                        <label for="subject" style="display: block; margin-bottom: 8px; font-weight: 500; color: var(--secondary-color);">Subject *</label>
+                        <select id="subject" name="subject" required style="width: 100%; padding: 15px; border: 2px solid #e0e0e0; border-radius: var(--border-radius); font-family: 'Poppins', sans-serif; font-size: 1rem; transition: var(--transition); background: var(--white);" onfocus="this.style.borderColor='var(--primary-color)'" onblur="this.style.borderColor='#e0e0e0'">
+                            <option value="">Select a subject</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="careers">Career Opportunities</option>
+                            <option value="press">Press & Media</option>
+                            <option value="partnership">Partnership Opportunities</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div style="margin-bottom: 30px;">
+                        <label for="message" style="display: block; margin-bottom: 8px; font-weight: 500; color: var(--secondary-color);">Your Message *</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="How can we help you?" style="width: 100%; padding: 15px; border: 2px solid #e0e0e0; border-radius: var(--border-radius); font-family: 'Poppins', sans-serif; font-size: 1rem; transition: var(--transition); resize: vertical; background: var(--white);" onfocus="this.style.borderColor='var(--primary-color)'" onblur="this.style.borderColor='#e0e0e0'"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="padding: 18px 50px; font-size: 1.1rem;">
+                        <i class="fas fa-paper-plane" style="margin-right: 10px;"></i>Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section" style="height: 500px; position: relative;">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9663095343008!2d-74.00425878428698!3d40.74076904379132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259bf5c1654f3%3A0xc80f9cfce5383d5d!2sGoogle%20NYC!5e0!3m2!1sen!2sus!4v1635959090000!5m2!1sen!2sus" 
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <div style="position: absolute; top: 50%; left: 50px; transform: translateY(-50%); background: var(--white); padding: 40px; border-radius: var(--border-radius); box-shadow: var(--shadow-lg); max-width: 350px;">
+            <h3 style="margin-bottom: 20px; color: var(--secondary-color);">Visit Us</h3>
+            <div style="display: flex; align-items: flex-start; margin-bottom: 15px;">
+                <i class="fas fa-map-marker-alt" style="color: var(--primary-color); margin-right: 15px; margin-top: 5px;"></i>
+                <div>
+                    <p style="font-weight: 500; color: var(--secondary-color);">742 Evergreen Terrace</p>
+                    <p style="color: var(--text-muted);">Downtown District, New York, NY 10001</p>
+                </div>
+            </div>
+            <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                <i class="fas fa-subway" style="color: var(--primary-color); margin-right: 15px;"></i>
+                <p style="color: var(--text-muted);">Subway: A, C, E to 14th Street</p>
+            </div>
+            <div style="display: flex; align-items: center;">
+                <i class="fas fa-parking" style="color: var(--primary-color); margin-right: 15px;"></i>
+                <p style="color: var(--text-muted);">Valet parking available</p>
+            </div>
+            <a href="https://maps.google.com" target="_blank" class="btn btn-primary" style="margin-top:
