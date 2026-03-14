@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our exquisite menu featuring handcrafted dishes made with locally-sourced ingredients at La Belle Cuisine.">
+    <title>Our Menu | La Belle Cuisine</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar scrolled">
+        <div class="container">
+            <a href="index.html" class="nav-logo">
+                <i class="fas fa-utensils" style="font-size: 2rem; color: var(--primary-color);"></i>
+                <span>La Belle Cuisine</span>
+            </a>
+            <div class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="menu.html" class="active">Menu</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="contact.html#reservations" class="btn btn-primary">Reserve Table</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header" style="background: linear-gradient(rgba(15, 15, 26, 0.85), rgba(15, 15, 26, 0.85)), url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat; min-height: 50vh; display: flex; align-items: center; justify-content: center; text-align: center; padding-top: 80px;">
+        <div class="container">
+            <h1 style="color: var(--white); font-size: 3.5rem; margin-bottom: 20px;">Our Menu</h1>
+            <p style="color: var(--text-light); font-size: 1.2rem; max-width: 600px; margin: 0 auto; opacity: 0.9;">Discover our carefully curated selection of dishes, crafted with passion and the finest seasonal ingredients</p>
+        </div>
+    </header>
+
+    <!-- Menu Filter -->
+    <section class="menu-filter" style="background: var(--white); padding: 30px 0; position: sticky; top: 70px; z-index: 100; box-shadow: var(--shadow);">
+        <div class="container">
+            <div class="filter-buttons" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 15px;">
+                <button class="filter-btn active" data-filter="all" style="padding: 12px 30px; border: 2px solid var(--primary-color); background: var(--primary-color); color: var(--white); font-family: 'Poppins', sans-serif; font-weight: 500; border-radius: 30px; cursor: pointer; transition: var(--transition);">All</button>
+                <button class="filter-btn" data-filter="starters" style="padding: 12px 30px; border: 2px solid var(--primary-color); background: transparent; color: var(--primary-color); font-family: 'Poppins', sans-serif; font-weight: 500; border-radius: 30px; cursor: pointer; transition: var(--transition);">Starters</button>
+                <button class="filter-btn" data-filter="mains" style="padding: 12px 30px; border: 2px solid var(--primary-color); background: transparent; color: var(--primary-color); font-family: 'Poppins', sans-serif; font-weight: 500; border-radius: 30px; cursor: pointer; transition: var(--transition);">Main Courses</button>
+                <button class="filter-btn" data-filter="seafood" style="padding: 12px 30px; border: 2px solid var(--primary-color); background: transparent; color: var(--primary-color); font-family: 'Poppins', sans-serif; font-weight: 500; border-radius: 30px; cursor: pointer; transition: var(--transition);">Seafood</button>
+                <button class="filter-btn" data-filter="desserts" style="padding: 12px 30px; border: 2px solid var(--primary-color); background: transparent; color: var(--primary-color); font-family: 'Poppins', sans-serif; font-weight: 500; border-radius: 30px; cursor: pointer; transition: var(--transition);">Desserts</button>
+                <button class="filter-btn" data-filter="drinks" style="padding: 12px 30px; border: 2px solid var(--primary-color); background: transparent; color: var(--primary-color); font-family: 'Poppins', sans-serif; font-weight: 500; border-radius: 30px; cursor: pointer; transition: var(--transition);">Drinks</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Starters Section -->
+    <section class="menu-section section-padding" data-category="starters" style="background: var(--bg-light);">
+        <div class="container">
+            <div class="section-title">
+                <span style="color: var(--primary-color); font-weight: 500; text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem;">Begin Your Journey</span>
+                <h2>Starters</h2>
+                <p>Delicate appetizers to awaken your palate</p>
+            </div>
+            <div class="menu-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px;">
+                <!-- Starter Item 1 -->
+                <div class="menu-item" style="background: var(--white); border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--shadow); transition: var(--transition);">
+                    <div class="menu-item-image" style="position: relative; height: 220px; overflow: hidden;">
+                        <img src="https://images.unsplash.com/photo-1541014741259-de529411b96a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="French Onion Soup" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                        <div class="price-tag" style="position: absolute; top: 15px; right: 15px; background: var(--primary-color); color: var(--white); padding: 8px 15px; border-radius: 20px; font-weight: 600;">$14</div>
+                    </div>
+                    <div class="menu-item-content" style="padding: 25px;">
+                        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
+                            <h4 style="color: var(--secondary-color);">French Onion Soup</h4>
+                            <span style="color: var(--primary-color); font-size: 0.85rem;"><i class="fas fa-leaf"></i> Vegetarian</span>
+                        </div>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 15px;">Caramelized onions slow-cooked in beef broth, topped with crusty bread and melted Gruyère cheese</p>
+                        <div class="menu-item-tags" style="display: flex; gap: 10px; flex-wrap: wrap;">
+                            <span style="background: var(--bg-light); padding: 5px 12px; border-radius: 15px; font-size: 0.8rem; color: var(--text-muted);">Signature</span>
+                            <span style="background: var(--bg-light); padding: 5px 12px; border-radius: 15px; font-size: 0.8rem; color: var(--text-muted);">Gluten-Free Option</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Starter Item 2 -->
+                <div class="menu-item" style="background: var(--white); border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--shadow); transition: var(--transition);">
+                    <div class="menu-item-image" style="position: relative; height: 220px; overflow: hidden;">
+                        <img src="https://images.unsplash.com/photo-1626200419199-391ae4be7a41?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Seared Scallops" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                        <div class="price-tag" style="position: absolute; top: 15px; right: 15px; background: var(--primary-color); color: var(--white); padding: 8px 15px; border-radius: 20px; font-weight: 600;">$22</div>
+                    </div>
+                    <div class="menu-item-content" style="padding: 25px;">
+                        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
+                            <h4 style="color: var(--secondary-color);">Seared Scallops</h4>
+                            <span style="color: var(--primary-color); font-size: 0.85rem;"><i class="fas fa-star"></i> Chef's Pick</span>
+                        </div>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 15px;">Pan-seared diver scallops on cauliflower purée with crispy pancetta and brown butter</p>
+                        <div class="menu-item-tags" style="display: flex; gap: 10px; flex-wrap: wrap;">
+                            <span style="background: var(--bg-light); padding: 5px 12px; border-radius: 15px; font-size: 0.8rem; color: var(--text-muted);">Gluten-Free</span>
+                            <span style="background: var(--bg-light); padding: 5px 12px; border-radius: 15px; font-size: 0.8rem; color: var(--text-muted);">Premium</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Starter Item 3 -->
+                <div class="menu-item" style="background: var(--white); border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--shadow); transition: var(--transition);">
+                    <div class="menu-item-image" style="position: relative; height: 220px; overflow: hidden;">
+                        <img src="https://images.unsplash.com/photo-1608897013039-887f21d8c804?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Burrata Caprese" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                        <div class="price-tag" style="position: absolute; top: 15px; right: 15px; background: var(--primary-color); color: var(--white); padding: 8px 15px; border-radius: 20px; font-weight: 600;">$18</div>
+                    </div>
+                    <div class="menu-item-content" style="padding: 25px;">
+                        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
+                            <h4 style="color: var(--secondary-color);">Burrata Caprese</h4>
+                            <span style="color: var(--primary-color); font-size: 0.85rem;"><i class="fas fa-leaf"></i> Vegetarian</span>
+                        </div>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 15px;">Creamy burrata with heirloom tomatoes, fresh basil, aged balsamic reduction, and extra virgin olive oil</p>
+                        <div class="menu-item-tags" style="display: flex; gap: 10px; flex-wrap: wrap;">
+                            <span style="background: var(--bg-light); padding: 5px 12px; border-radius: 15px; font-size: 0.8rem; color: var(--text-muted);">Fresh</span>
+                            <span style="background: var(--bg-light); padding: 5px 12px; border-radius: 15px; font-size: 0.8rem; color: var(--text-muted);">Seasonal</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Starter Item 4 -->
+                <div class="menu-item" style="background: var(--white); border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--shadow); transition: var(--transition);">
+                    <div class="menu-item-image" style="position: relative; height: 220px; overflow: hidden;">
+                        <img src="https://images.unsplash.com/photo-1560717789-0ac7c58ac90a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Beef Carpaccio" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                        <div class="price-tag" style="position: absolute; top: 15px; right: 15px; background: var(--primary-color); color: var(--white); padding: 8px 15px; border-radius: 20px; font-weight: 600;">$19</div>
+                    </div>
+                    <div class="menu-item-content" style="padding: 25px;">
+                        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
+                            <h4 style="color: var(--secondary-color);">Beef Carpaccio</h4>
+                            <span style="color: var(--primary-color); font-size: 0.85rem;"><i class="fas fa-fire"></i> Raw</span>
+                        </div>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 15px;">Thinly sliced prime beef tenderloin with arugula, shaved Parmigiano-Reggiano, and truffle aioli</p>
+                        <div class="menu-item-tags" style="display: flex; gap: 10px; flex-wrap: wrap;">
+                            <span style="background: var(--bg-light); padding: 5px 12px; border-radius: 15px; font-size: 0.8rem; color: var(--text-muted);">Gluten-Free</span>
+                            <span style="background: var(--bg-light); padding: 5px 12px; border-radius: 15px; font-size: 0.8rem; color: var(--text-muted);">Classic</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Courses Section -->
+    <section class="menu-section section-padding" data-category="mains" style="background: var(--white);">
+        <div class="container">
+            <div class="section-title">
+                <span style="color: var(--primary-color); font-weight: 500; text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem;">The Heart of the Meal</span>
+                <h2>Main Courses</h2>
+                <p>Expertly prepared entrées showcasing culinary excellence</p>
+            </div>
+            <div class="menu-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px;">
+                <!-- Main Item 1 -->
+                <div class="menu-item" style="background: var(--bg-light); border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--shadow); transition: var(--transition);">
+                    <div class="menu-item-image" style="position: relative; height: 220px; overflow: hidden;">
+                        <img src="https://images.unsplash.com/photo-1558030006-450675393462?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Filet Mignon" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                        <div class="price-tag" style="position: absolute; top: 15px; right: 15px; background: var(--primary-color); color: var(--white); padding: 8px 15px; border-radius: 20px; font-weight: 600;">$52</div>
+                    </div>
+                    <div class="menu-item-content" style="padding: 25px;">
+                        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
+                            <h4 style="color: var(--secondary-color);">Filet Mignon</h4>
+                            <span style="color: var(--primary-color); font-size: 0.85rem;"><i class="fas fa-crown"></i> Premium</span>
+                        </div>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 15px;">8oz center-cut beef tenderloin with red wine reduction, truffle mashed potatoes, and seasonal vegetables</p>
+                        <div class="menu-item-tags" style="display: flex; gap: 10px; flex-wrap: wrap;">
+                            <span style="background: var(--white); padding: 5px 12px; border-radius: 15px; font-size: 0.8rem; color: var(--text-muted);">Signature</span>
+                            <span style="background: var(--white); padding: 5px 12px; border-radius: 15px; font-size: 0.8rem; color: var(--text-muted);">Gluten-Free</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Item 2 -->
+                <div class="menu-item" style="background: var(--bg-light); border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--shadow); transition: var(--transition);">
+                    <div class="menu-item-image" style="position: relative; height: 220px; overflow: hidden;">
+                        <img src="https://images.unsplash.com/photo-1432139555190-58524dae6a55?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Roasted Duck Breast" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                        <div class="price-tag" style="position: absolute; top: 15px; right: 15px; background: var(--primary-color); color: var(--white); padding: 8px 15px; border-radius: 20px; font-weight: 600;">$42</div>
+                    </div>
+                    <div class="menu-item-content" style="padding: 25px;">
+                        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
+                            <h4 style="color: var(--secondary-color);">Roasted Duck Breast</h4>
+                            <span style="color: var(--primary-color); font-size: 0.85rem;"><i class="fas fa-star"></i> Chef's Pick</span>
+                        </div>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 15px;">Pan-roasted Moulard duck breast with cherry gastrique, sweet potato purée, and braised red cabbage</p>
+                        <div class="menu-item-tags" style="display: flex; gap: 10px; flex-wrap: wrap;">
+                            <span style="background: var(--white); padding: 5px 12px; border-radius: 15px; font-size: 0.8rem; color: var(--text-muted);">French</span>
+                            <span style="background: var(--white); padding: 5px 12px; border-radius: 15px; font-size: 0.8rem; color: var(--text-muted);">Gluten-Free</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Item 3 -->
+                <div class="menu-item" style="background: var(--bg-light); border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--shadow); transition: var(--transition);">
+                    <div class="menu-item-image" style="position: relative; height: 220px; overflow: hidden;">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Rack of Lamb" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                        <div class="price-tag" style="position: absolute; top: 15px; right: 15px; background: var(--primary-color); color: var(--white); padding: 8px 15px; border-radius: 20px; font-weight: 600;">$48</div>
+                    </div>
+                    <div class="menu-item-content" style="padding: 25px;">
+                        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
+                            <h4 style="color: var(--secondary-color);">Herb-Crusted Rack of Lamb</h4>
+                            <span style="color: var(--primary-color); font-size: 0.85rem;"><i class="fas fa-award"></i> Award Winner</span>
+                        </div>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 15px;">New Zealand lamb with Dijon-herb crust, mint pesto, roasted fingerling potatoes, and haricots verts</p>
+                        <div class="menu-item-tags" style="display: flex; gap: 10px; flex-wrap: wrap;">
+                            <span style="background: var(--white); padding: 5px 12px; border-radius: 15px; font-size: 0.8rem; color: var(--text-muted);">Signature</span>
+                            <span style="background: var(--white); padding: 5px 12px; border-radius: 15px; font-size: 0.8rem; color: var(--text-muted);">Contains Nuts</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Item 4 -->
+                <div class="menu-item" style="background: var(--bg-light); border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--shadow); transition: var(--transition);">
+                    <div class="menu-item-image" style="position: relative; height: 220px; overflow: hidden;">
+                        <img src="https://images.unsplash.com/photo-1546549032-9571cd6b27df?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Mushroom Risotto" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                        <div class="price-tag" style="position: absolute; top: 15px; right: 15px; background: var(--primary-color); color: var(--white); padding: 8px 15px; border-radius: 20px; font-weight: 600;">$32</div>
+                    </div>
+                    <div class="menu-item-content" style="padding: 25px;">
+                        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
+                            <h4 style="color: var(--secondary-color);">Wild Mushroom Risotto</h4>
+                            <span style="color: var(--primary-color); font-size: 0.85rem;"><i class="fas fa-leaf"></i> Vegetarian</span>
+                        </div>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 15px;">Creamy Arborio rice with porcini, chanterelle, and shiitake mushrooms, finished with truffle oil and Parmesan</p>
+                        <div class="menu-item-tags" style="display: flex; gap: 10px; flex-wrap: wrap;">
+                            <span style="background: var(--white); padding: 5px 12px; border-radius: 15px; font-size: 0.8rem; color: var(--text-muted);">Italian</span>
+                            <span style="background: var(--white); padding: 5px 12px; border-radius: 15px; font-size: 0.8rem; color: var(--text-muted);">Gluten-Free</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seafood Section -->
+    <section class="menu-section section-padding" data-category="seafood" style="background: linear-gradient(rgba(15, 15, 26, 0.9), rgba(15, 15, 26, 0.9)), url('https://images.unsplash.com/photo-1498654896293-37aacf113fd9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover fixed;">
+        <div class="container">
+            <div class="section-title">
+                <span style="color: var(--primary-color); font-weight: 500; text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem;">From the Ocean</span>
+                <h2 style="color: var(--white);">Seafood Selection</h2>
+                <p style="color: rgba(255,255,255,0.8);">Fresh catches prepared with Mediterranean inspiration</p>
+            </div>
+            <div class="menu-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px;">
+                <!-- Seafood Item 1 -->
+                <div class="menu-item" style="background: var(--white); border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--shadow-lg); transition: var(--transition);">
+                    <div class="menu-item-image" style="position: relative; height: 220px; overflow: hidden;">
+                        <img src="https://images.unsplash.com/photo-1485921325833-c519f76c4927?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Pan-Seared Salmon" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                        <div class="price-tag" style="position: absolute; top: 15px; right: 15px; background: var(--primary-color); color: var(--white); padding: 8px 15px; border-radius: 20px; font-weight: 600;">$38</div>
+                    </div>
+                    <div class="menu-item-content" style="padding: 25px;">
+                        <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px;">
+                            <h4 style="color: var(--secondary-color);">Pan-Seared Atlantic Salmon</h4>
+                            <span style="color: var(--primary-color); font-size: 0.85rem;"><i class="fas fa-heart"></i> Healthy</span>
+                        </div>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 15px;">Wild-caught salmon with lemon-dill beurre blanc, asparagus, and quinoa pilaf</p>
+                        <div class="menu-item-tags" style="display: flex; gap: 10px; flex-wrap: wrap;">
+                            <span style="background: var(--bg-light); padding: 5px 12px; border-radius: 15px; font-size: 0.8rem; color: var(--text-muted);">Gluten-Free</span>
+                            <span style="background: var(--bg-light); padding: 5px 12px; border-radius: 15px; font-size: 0.8rem; color: var(--text-muted);">Omega-3 Rich</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Seafood Item 2 -->
+                <div class="menu-item" style="background: var(--white); border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--shadow-lg); transition: var(--transition);">
+                    <div class="menu-item-image" style="position: relative; height: 220px; overflow: hidden;">
+                        <img src="https://images.unsplash.com/photo-1559737558-2f5a35f4523b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Grilled Lobster Tail" style="width: 100%; height: 100%;
