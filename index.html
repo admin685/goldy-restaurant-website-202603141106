@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="La Belle Cuisine - An exquisite fine dining experience featuring French-inspired cuisine crafted with locally-sourced ingredients in the heart of downtown.">
+    <title>La Belle Cuisine | Fine Dining Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-logo">
+                <img src="https://img.recraft.ai/I47z3zhBXKkd1gbvuxmG5fOKmIyUOEBhSvLfGJnY1i8/rs:fit:1024:1024:0/raw:1/plain/abs://external/images/348c8301-7054-4746-8d88-5eaec97b8aad" alt="Logo" class="navbar-logo" style="height:40px;width:auto;">
+                <span>La Belle Cuisine</span>
+            </a>
+            <div class="nav-menu">
+                <a href="index.html" class="active">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="contact.html#reservations" class="btn btn-primary">Reserve Table</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home" style="background-image:url('https://replicate.delivery/xezq/NZOSytA0Tg7bK9FPOe1NWLINhgvTugWqSS3p76Z0m1DJjXILA/out-0.webp');background-size:cover;background-position:center;">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-subtitle">Welcome to La Belle Cuisine</span>
+                <h1>Where Culinary Art Meets Timeless Elegance</h1>
+                <p>Experience the finest French-inspired cuisine crafted with passion, precision, and locally-sourced ingredients. Every dish tells a story of tradition reimagined.</p>
+                <div class="hero-buttons">
+                    <a href="menu.html" class="btn btn-primary">Explore Our Menu</a>
+                    <a href="contact.html#reservations" class="btn btn-secondary">Book a Table</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <a href="#about-preview">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Preview Section -->
+    <section id="about-preview" class="section-padding">
+        <div class="container">
+            <div class="about-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
+                <div class="about-images" style="position: relative;">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Elegant plated dish at La Belle Cuisine" style="border-radius: var(--border-radius); box-shadow: var(--shadow-lg); width: 85%;">
+                    <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Chef preparing a signature dish" style="position: absolute; bottom: -40px; right: 0; width: 55%; border-radius: var(--border-radius); box-shadow: var(--shadow-lg); border: 5px solid var(--white);">
+                </div>
+                <div class="about-content">
+                    <span style="color: var(--primary-color); font-weight: 500; text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem;">Our Story</span>
+                    <h2 style="margin: 15px 0 25px;">A Legacy of Culinary Excellence Since 1992</h2>
+                    <p style="color: var(--text-muted); margin-bottom: 20px;">For over three decades, La Belle Cuisine has been a beacon of fine dining, where classic French techniques meet contemporary innovation. Our founder, Chef Marie-Claire Dubois, brought her passion from the kitchens of Lyon to create an unforgettable dining experience.</p>
+                    <p style="color: var(--text-muted); margin-bottom: 30px;">Every ingredient is thoughtfully sourced from local farms and artisan producers, ensuring that each plate reflects our commitment to quality, sustainability, and extraordinary flavor.</p>
+                    <div class="about-features" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 30px;">
+                        <div style="display: flex; align-items: center; gap: 15px;">
+                            <i class="fas fa-leaf" style="color: var(--primary-color); font-size: 1.5rem;"></i>
+                            <span style="font-weight: 500;">Farm-to-Table Fresh</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 15px;">
+                            <i class="fas fa-award" style="color: var(--primary-color); font-size: 1.5rem;"></i>
+                            <span style="font-weight: 500;">Michelin Recognized</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 15px;">
+                            <i class="fas fa-wine-glass-alt" style="color: var(--primary-color); font-size: 1.5rem;"></i>
+                            <span style="font-weight: 500;">Curated Wine Selection</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 15px;">
+                            <i class="fas fa-heart" style="color: var(--primary-color); font-size: 1.5rem;"></i>
+                            <span style="font-weight: 500;">Crafted with Passion</span>
+                        </div>
+                    </div>
+                    <a href="about.html" class="btn btn-primary">Discover Our Story</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signature Dishes Section -->
+    <section id="signature-dishes" class="section-padding" style="background: var(--white);">
+        <div class="container">
+            <div class="section-title">
+                <span style="color: var(--primary-color); font-weight: 500; text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem;">Culinary Masterpieces</span>
+                <h2>Our Signature Dishes</h2>
+                <p>Discover the dishes that have made La Belle Cuisine a destination for food lovers from around the world</p>
+            </div>
+            <div class="dishes-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;">
+                <!-- Dish Card 1 -->
+                <div class="card dish-card" style="border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--shadow); transition: var(--transition);">
+                    <div style="position: relative; overflow: hidden;">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Seared Duck Breast" style="width: 100%; height: 280px; object-fit: cover; transition: var(--transition);">
+                        <div style="position: absolute; top: 15px; right: 15px; background: var(--primary-color); color: var(--white); padding: 8px 15px; border-radius: 20px; font-size: 0.85rem; font-weight: 500;">Chef's Choice</div>
+                    </div>
+                    <div style="padding: 25px;">
+                        <h4 style="margin-bottom: 10px;">Seared Duck Breast</h4>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 15px;">Pan-seared duck breast with cherry gastrique, roasted root vegetables, and wild rice pilaf</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--primary-color); font-weight: 600;">$48</span>
+                            <a href="menu.html" style="color: var(--primary-color); font-weight: 500;">View Details <i class="fas fa-arrow-right" style="margin-left: 5px;"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Dish Card 2 -->
+                <div class="card dish-card" style="border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--shadow); transition: var(--transition);">
+                    <div style="position: relative; overflow: hidden;">
+                        <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Lobster Thermidor" style="width: 100%; height: 280px; object-fit: cover; transition: var(--transition);">
+                        <div style="position: absolute; top: 15px; right: 15px; background: var(--accent-color); color: var(--white); padding: 8px 15px; border-radius: 20px; font-size: 0.85rem; font-weight: 500;">Signature</div>
+                    </div>
+                    <div style="padding: 25px;">
+                        <h4 style="margin-bottom: 10px;">Lobster Thermidor</h4>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 15px;">Classic Maine lobster with cognac cream sauce, gruyère gratin, and herb-roasted fingerlings</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--primary-color); font-weight: 600;">$72</span>
+                            <a href="menu.html" style="color: var(--primary-color); font-weight: 500;">View Details <i class="fas fa-arrow-right" style="margin-left: 5px;"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Dish Card 3 -->
+                <div class="card dish-card" style="border-radius: var(--border-radius); overflow: hidden; box-shadow: var(--shadow); transition: var(--transition);">
+                    <div style="position: relative; overflow: hidden;">
+                        <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Chocolate Soufflé" style="width: 100%; height: 280px; object-fit: cover; transition: var(--transition);">
+                        <div style="position: absolute; top: 15px; right: 15px; background: var(--secondary-color); color: var(--white); padding: 8px 15px; border-radius: 20px; font-size: 0.85rem; font-weight: 500;">Must Try</div>
+                    </div>
+                    <div style="padding: 25px;">
+                        <h4 style="margin-bottom: 10px;">Grand Marnier Soufflé</h4>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 15px;">Light and airy chocolate soufflé with Grand Marnier, served with crème anglaise</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--primary-color); font-weight: 600;">$18</span>
+                            <a href="menu.html" style="color: var(--primary-color); font-weight: 500;">View Details <i class="fas fa-arrow-right" style="margin-left: 5px;"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 50px;">
+                <a href="menu.html" class="btn btn-primary">View Full Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section-padding" style="background: linear-gradient(rgba(15, 15, 26, 0.9), rgba(15, 15, 26, 0.9)), url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover fixed no-repeat;">
+        <div class="container">
+            <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+                <span style="color: var(--primary-color); font-weight: 500; text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem;">The Experience</span>
+                <h2 style="color: var(--white); margin: 15px 0 25px;">More Than Just a Meal</h2>
+                <p style="color: rgba(255, 255, 255, 0.8); font-size: 1.1rem; margin-bottom: 50px;">At La Belle Cuisine, dining is an immersive journey. From the moment you step through our doors, every detail is crafted to create memories that last a lifetime.</p>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; text-align: center;">
+                <div style="padding: 40px 20px;">
+                    <div style="width: 100px; height: 100px; background: rgba(201, 162, 39, 0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 25px; border: 2px solid var(--primary-color);">
+                        <i class="fas fa-concierge-bell" style="font-size: 2.5rem; color: var(--primary-color);"></i>
+                    </div>
+                    <h4 style="color: var(--white); margin-bottom: 15px;">Impeccable Service</h4>
+                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.95rem;">Our attentive staff anticipates your every need while maintaining a warm, welcoming atmosphere</p>
+                </div>
+                <div style="padding: 40px 20px;">
+                    <div style="width: 100px; height: 100px; background: rgba(201, 162, 39, 0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 25px; border: 2px solid var(--primary-color);">
+                        <i class="fas fa-wine-bottle" style="font-size: 2.5rem; color: var(--primary-color);"></i>
+                    </div>
+                    <h4 style="color: var(--white); margin-bottom: 15px;">Award-Winning Wines</h4>
+                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.95rem;">Our sommelier curates exceptional pairings from over 500 labels spanning renowned regions</p>
+                </div>
+                <div style="padding: 40px 20px;">
+                    <div style="width: 100px; height: 100px; background: rgba(201, 162, 39, 0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 25px; border: 2px solid var(--primary-color);">
+                        <i class="fas fa-gem" style="font-size: 2.5rem; color: var(--primary-color);"></i>
+                    </div>
+                    <h4 style="color: var(--white); margin-bottom: 15px;">Elegant Ambiance</h4>
+                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.95rem;">Sophisticated décor with intimate lighting creates the perfect setting for special occasions</p>
+                </div>
+                <div style="padding: 40px 20px;">
+                    <div style="width: 100px; height: 100px; background: rgba(201, 162, 39, 0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 25px; border: 2px solid var(--primary-color);">
+                        <i class="fas fa-calendar-check" style="font-size: 2.5rem; color: var(--primary-color);"></i>
+                    </div>
+                    <h4 style="color: var(--white); margin-bottom: 15px;">Private Events</h4>
+                    <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.95rem;">Host unforgettable celebrations in our exclusive private dining rooms for up to 50 guests</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <span style="color: var(--primary-color); font-weight: 500; text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem;">Guest Reviews</span>
+                <h2>What Our Guests Say</h2>
+                <p>Don't just take our word for it — hear from those who've experienced the magic of La Belle Cuisine</p>
+            </div>
+            <div class="testimonials-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;">
+                <!-- Testimonial 1 -->
+                <div class="card testimonial-card" style="background: var(--white); padding: 40px; border-radius: var(--border-radius); box-shadow: var(--shadow); position: relative;">
+                    <div style="color: var(--primary-color); font-size: 4rem; position: absolute; top: 20px; right: 30px; opacity: 0.2; font-family: Georgia, serif;">"</div>
+                    <div style="display: flex; gap: 5px; margin-bottom: 20px;">
+                        <i class="fas fa-star" style="color: var(--primary-color);"></i>
+                        <i class="fas fa-star" style="color: var(--primary-color);"></i>
+                        <i class="fas fa-star" style="color: var(--primary-color);"></i>
+                        <i class="fas fa-star" style="color: var(--primary-color);"></i>
+                        <i class="fas fa-star" style="color: var(--primary-color);"></i>
+                    </div>
+                    <p style="color: var(--text-muted); font-style: italic; margin-bottom: 25px; line-height: 1.8;">"An absolutely magical evening. The Lobster Thermidor was the best I've ever had, and the sommelier's wine pairing was perfection. This is fine dining at its finest."</p>
+                    <div style="display: flex; align-items: center; gap: 15px;">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Sarah Mitchell" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+                        <div>
+                            <h4 style="font-size: 1.1rem; margin-bottom: 3px;">Sarah Mitchell</h4>
+                            <span style="color: var(--text-muted); font-size: 0.9rem;">Food Critic, The Daily Gazette</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="card testimonial-card" style="background: var(--white); padding: 40px; border-radius: var(--border-radius); box-shadow: var(--shadow); position: relative;">
+                    <div style="color: var(--primary-color); font-size: 4rem; position: absolute; top: 20px; right: 30px; opacity: 0.2; font-family: Georgia, serif;">"</div>
+                    <div style="display: flex; gap: 5px; margin-bottom: 20px;">
+                        <i class="fas fa-star" style="color: var(--primary-color);"></i>
+                        <i class="fas fa-star" style="color: var(--primary-color);"></i>
+                        <i class="fas fa-star" style="color: var(--primary-color);"></i>
+                        <i class="fas fa-star" style="color: var(--primary-color);"></i>
+                        <i class="fas fa-star" style="color: var(--primary-color);"></i>
+                    </div>
+                    <p style="color: var(--text-muted); font-style: italic; margin-bottom: 25px; line-height: 1.8;">"We celebrated our 25th anniversary here and couldn't have chosen better. The private dining room was stunning, and every course was a masterpiece. Truly unforgettable."</p>
+                    <div style="display: flex; align-items: center; gap: 15px;">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Robert & Linda Chen" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+                        <div>
+                            <h4 style="font-size: 1.1rem; margin-bottom: 3px;">Robert & Linda Chen</h4>
+                            <span style="color: var(--text-muted); font-size: 0.9rem;">Anniversary Celebration</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="card testimonial-card" style="background: var(--white); padding: 40px; border-radius: var(--border-radius); box-shadow: var(--shadow); position: relative;">
+                    <div style="color: var(--primary-color); font-size: 4rem; position: absolute; top: 20px; right: 30px; opacity: 0.2; font-family: Georgia, serif;">"</div>
+                    <div style="display: flex; gap: 5px; margin-bottom: 20px;">
+                        <i class="fas fa-star" style="color: var(--primary-color);"></i>
+                        <i class="fas fa-star" style="color: var(--primary-color);"></i>
+                        <i class="fas fa-star" style="color: var(--primary-color);"></i>
+                        <i class="fas fa-star" style="color: var(--primary-color);"></i>
+                        <i class="fas fa-star" style="color: var(--primary-color);"></i>
+                    </div>
+                    <p style="color: var(--text-muted); font-style: italic; margin-bottom: 25px; line-height: 1.8;">"As a chef myself, I'm incredibly critical of fine dining. La Belle Cuisine exceeded every expectation. The technique, presentation, and flavors are world-class."</p>
+                    <div style="display: flex; align-items: center; gap: 15px;">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Chef Marcus Thompson" style="width: 60px; height: 60px; border-radius: 50%; object-fit: cover;">
+                        <div>
+                            <h4 style="font-size: 1.1rem; margin-bottom: 3px;">Chef Marcus Thompson</h4>
+                            <span style="color: var(--text-muted); font-size: 0.9rem;">Executive Chef, The Grand Hotel</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation CTA Section -->
+    <section id="reservation-cta" class="section-padding" style="background: var(--secondary-color);">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
+                <div>
+                    <span style="color: var(--primary-color); font-weight: 500; text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem;">Make a Reservation</span>
+                    <h2 style="color: var(--white); margin: 15px 0 25px;">Reserve Your Table Today</h2>
+                    <p style="color: rgba(255, 255, 255, 0.8); margin-bottom: 30px;">Join us for an extraordinary culinary journey. Whether it's an intimate dinner for two or a celebration with friends, we'll make your evening unforgettable.</p>
+                    <div style="display: flex; flex-direction: column; gap: 20px; margin-bottom: 35px;">
+                        <div style="display: flex; align-items: center; gap: 20px;">
+                            <div style="width: 50px; height: 50px; background: rgba(201, 162, 39, 0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-clock" style="color: var(--primary-color); font-size: 1.2rem;"></i>
+                            </div>
+                            <div>
+                                <h4 style="color: var(--white); font-size: 1rem; margin-bottom: 3px;">Opening Hours</h4>
+                                <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.95rem;">Tue-Sun: 5:30 PM - 10:30 PM</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 20px;">
+                            <div style="width: 50px; height: 50px; background: rgba(201, 162, 39, 0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-phone" style="color: var(--primary-color); font-size: 1.2rem;"></i>
+                            </div>
+                            <div>
+                                <h4 style="color: var(--white); font-size: 1rem; margin-bottom: 3px;">Reservations</h4>
+                                <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.95rem;">(555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 20px;">
+                            <div style="width: 50px; height: 50px; background: rgba(201, 162, 39, 0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-map-marker-alt" style="color: var(--primary-color); font-size: 1.2rem;"></i>
+                            </div>
+                            <div>
+                                <h4 style="color: var(--white); font-size: 1rem; margin-bottom: 3px;">Location</h4>
+                                <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.95rem;">123 Gourmet Avenue, Downtown</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="contact.html#reservations" class="btn btn-primary">Book Your Table</a>
+                </div>
+                <div style="position: relative;">
+                    <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Elegant table setting at La Belle Cuisine" style="border-radius: var(--border-radius); box-shadow: var(--shadow-lg); width: 100%;">
+                    <div style="position: absolute; top: -20px; left: -20px; width: 150px; height: 150px; border: 3px solid var(--primary-color); border-radius: var(--border-radius);"></div>
+                    <div style="position: absolute; bottom: -20px; right: -20px; width: 150px; height: 150px; border: 3px solid var(--primary-color); border-radius: var(--border-radius);"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Feed Section -->
+    <section id="instagram" class="section-padding" style="background: var(--white);">
+        <div class="container">
+            <div class="section-title">
+                <span style="color: var(--primary-color); font-weight: 500; text-transform: uppercase; letter-spacing: 2px; font-size: 0
